@@ -24,7 +24,12 @@
         >
       </li>
     </ul>
+    
   </nav>
+
+      <nav class="flex mb-5 text-sm">
+    
+    </nav>
 </template>
 
 <script>

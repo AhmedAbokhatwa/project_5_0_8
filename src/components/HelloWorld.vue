@@ -1,8 +1,6 @@
 <template>
   <div class="hello">
 
-   
-
 
  
   </div>
@@ -11,9 +9,9 @@
 <script>
 export default {
   name: "HelloWorld",
-  props: {
-    msg: String,
-  },
+  // props: {
+  //   msg: String,
+  // },
 };
 </script>
 
