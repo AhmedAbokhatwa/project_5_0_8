@@ -81,10 +81,10 @@
             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Created</th>
           </tr>
         </thead>
-        <tbody class="bg-white divide-y divide-gray-200">
+        <tbody class="bg-white divide-y divide-gray-200" >
           <!-- Row 1 -->
-          <tr class="hover:bg-gray-50">
-            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Employee 1</td>
+          <tr v-for="customer in customers" :key="customer.name" class="hover:bg-gray-50">
+            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{customer.name}}</td>
             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Contractual leave</td>
             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Kwt</td>
             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
@@ -114,165 +114,7 @@
             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">23/03/2015</td>
           </tr>
           
-          <!-- Row 2 -->
-          <tr class="hover:bg-gray-50">
-            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Employee 2</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Contractual leave</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">NKwt</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-                False
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25/03/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25/04/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">32d</td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">23/03/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">23/03/2015</td>
-          </tr>
-          
-          <!-- Row 3 -->
-          <tr class="hover:bg-gray-50">
-            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Employee 3</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Temporary Reliever</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">NKwt</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                True
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/03/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">31/03/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">27d</td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                Approved
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                Approved
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                Approved
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/03/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/03/2015</td>
-          </tr>
-          
-          <!-- Row 4 -->
-          <tr class="hover:bg-gray-50">
-            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Employee 4</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Temporary Reliever</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">NKwt</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                True
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/03/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">31/03/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">27d</td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                Approved
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/03/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/03/2015</td>
-          </tr>
-          
-          <!-- Row 5 -->
-          <tr class="hover:bg-gray-50">
-            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Employee 5</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Sick Leave</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">NKwt</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-                False
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">06/02/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">19/02/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">14d</td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/02/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/02/2015</td>
-          </tr>
-          
-          <!-- Row 6 -->
-          <tr class="hover:bg-gray-50">
-            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Employee 6</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Emergency leave</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">NKwt</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-                False
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">04/01/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">13/01/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">10d</td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                Pending
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                Approved
-              </span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">05/01/2015</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">04/01/2015</td>
-          </tr>
+    
         </tbody>
       </table>
     </div>
