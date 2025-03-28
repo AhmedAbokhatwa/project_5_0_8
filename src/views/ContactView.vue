@@ -1,10 +1,6 @@
 <template>
   <NavBar />
   <div class="container mx-auto px-4 py-6">
-
-
-
-
     <!-- Page Header and Action Buttons -->
     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
       <h1 class="text-2xl font-bold text-gray-800 mb-4 md:mb-0">Leave Workflow Management</h1>

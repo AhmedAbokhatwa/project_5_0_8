@@ -23,6 +23,20 @@
           >Contact</router-link
         >
       </li>
+      <li>
+        <router-link
+          to="/contact"
+          :class="{ 'bg-red-900': isActiveLink('/contact') }"
+          >Contact</router-link
+        >
+      </li>
+      <li>
+        <router-link 
+         to="/signin"
+        :class="{ 'bg-red-900': isActiveLink('/signin') }"
+        >sign in 
+      </router-link>
+      </li>
     </ul>
     
   </nav>
