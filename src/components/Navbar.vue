@@ -36,6 +36,12 @@
         :class="{ 'bg-red-900': isActiveLink('/signin') }"
         >sign in 
       </router-link>
+      <router-link
+      to="/signout"
+      :class="{'bg-red-900':isActiveLink('/signout')}"
+      >
+      sign out
+      </router-link>
       </li>
     </ul>
     
